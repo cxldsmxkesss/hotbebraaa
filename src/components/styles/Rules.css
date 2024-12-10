@@ -1,0 +1,43 @@
+div#rules-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6)
+  
+}
+
+div#rules-screen {
+  &.hidden {
+    display: none;
+  }
+  
+  & div#rules {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    padding: 3rem;
+    margin: 0;
+  
+    background-color: white;
+    border: 2px solid black;
+  }
+  
+  & div#rules > h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  & div#rules > p {
+    text-align: center;
+  }
+  
+  & div#rules > input[type="button"]#close-rules-button {
+    display: block;
+    margin: 4rem auto 0 auto;
+    width: 100%;
+    height: 2rem;
+  }
+}

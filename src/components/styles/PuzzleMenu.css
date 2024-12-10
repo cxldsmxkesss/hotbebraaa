@@ -1,0 +1,38 @@
+#puzzle-menu {
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 2rem;
+}
+
+
+#puzzle-menu {
+  & p#puzzle-info {
+    text-align: center;
+    margin: 0.5rem auto;
+    font-weight: bold;
+  }
+  
+  & #status-message {
+    text-align: center;
+    margin: 0.5rem auto;
+  }
+  
+  & #status-message.complete {
+    color: green;
+  }
+  
+  & #status-message.incomplete {
+    color: red;
+  }
+  
+  & #puzzle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto;
+  } 
+  
+  & #puzzle-buttons > input[type="button"] {
+    margin: 0 0.5rem;
+  }
+}
+

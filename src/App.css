@@ -1,0 +1,8 @@
+body {
+  height: 100lvh; 
+  background-image: url("./assets/bg.png");
+  background-color: rgba(0,0,0,0.2) !important;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  background-size: cover;
+}

@@ -1,0 +1,85 @@
+:root {
+  --cell-border-color: black;
+}
+
+
+
+#rowHints, #colHints {
+  & button.hint {
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    border: 0;
+    line-height: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: default
+  }
+
+  & button.hint.checked {
+    color: red;
+  }
+}
+
+
+
+
+/* Row Hints */
+#rowHints {
+  border-top: 2px solid var(--cell-border-color);
+  border-bottom: 2px solid var(--cell-border-color);
+  border-left: 4px solid var(--cell-border-color);
+}
+
+#rowHints {
+  & div.rowHint {
+    display: flex;
+    background-color: red;
+  }
+  
+  & div.rowHint > button.hint {
+    border-top:  1px solid var(--cell-border-color);
+    border-bottom: 1px solid var(--cell-border-color);
+  }
+  
+  & div.rowHint:nth-of-type(5n) > button.hint {
+    border-bottom: 2px solid var(--cell-border-color);
+  }
+  
+  & div.rowHint:nth-of-type(5n+1) > button.hint {
+    border-top: 2px solid var(--cell-border-color);
+  }
+}
+
+
+
+
+
+/* Column Hints */
+#colHints {
+  display: flex;
+  border-top: 4px solid var(--cell-border-color);
+  border-left: 2px solid var(--cell-border-color);
+  border-right: 2px solid var(--cell-border-color);
+}
+
+#colHints {
+  & div.colHint {
+    background-color: red;
+  }
+  
+  & div.colHint > button.hint {
+    display: block;
+    border-left:  1px solid var(--cell-border-color);
+    border-right: 1px solid var(--cell-border-color);
+  }
+  
+  & div.colHint:nth-of-type(5n) > button.hint {
+    border-right: 2px solid var(--cell-border-color);
+  }
+  
+  & div.colHint:nth-of-type(5n+1) > button.hint {
+    border-left: 2px solid var(--cell-border-color);
+  }
+}

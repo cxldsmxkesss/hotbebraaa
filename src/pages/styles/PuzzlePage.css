@@ -1,0 +1,12 @@
+main#puzzlepage-main {
+  position: absolute;
+  left: 10%;
+  width: 90%;
+  height: 100%;
+}
+
+main#puzzlepage-main > #puzzle-area {
+  width: max-content;
+  margin: 2rem auto;
+  padding: 2rem;
+}

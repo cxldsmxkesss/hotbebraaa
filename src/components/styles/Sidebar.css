@@ -1,0 +1,106 @@
+#sidebar {
+  background: white;
+  min-height: 100vh;
+  width:12rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 2px solid black;
+}
+
+#sidebar {
+  & #logo {
+    width: 96%;
+    margin: 2% 2%;
+  }
+  
+  & #title-img {
+    width: 96%;
+    margin: 0.5rem 2% 0.5rem 2%;
+  }
+  
+  
+  
+  & h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  & hr {
+    opacity: 1;
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  
+  & hr.thick {
+    border: 1px solid black;
+  }
+  
+  & #size-buttons {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  
+  & #size-buttons > .size-button {
+    margin: 0.2rem auto
+  }
+  
+  & #size-buttons > .size-button > input[type=radio] + label {
+    width: 100%; 
+    box-shadow: none;
+    box-shadow: inset 0 0 0 2px white;
+    outline:0px !important;
+    transition: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0;
+  }
+  
+  & #size-buttons > .size-button > input[type=radio]:hover + label {
+    background-color: lightgrey;
+    border-color: black;
+    }
+  
+  & #size-buttons > .size-button > input[type=radio]:checked + label {
+  background-color: black;
+  border-color: black;
+  color: white;
+  box-shadow: inset 0 0 0 2px white;
+  }
+  
+  & #puzzle-form > #enter-seed {
+    width: 80%;
+    background-color: white;
+    border: 2px solid black;
+    margin: 1rem auto;
+  }
+  
+  & #puzzle-form > #enter-seed > label {
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0.5rem auto;
+  }
+  
+  & #puzzle-form > #enter-seed > input[type="text"]#seed {
+    display: block;
+    box-shadow: none !important;
+    width: 80%;
+    margin: 0.5rem auto;
+    
+  }
+  
+  & #puzzle-form > input[type="submit"]#generate-from-seed-btn {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  
+  & #rules-button {
+    display: block;
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+}
+

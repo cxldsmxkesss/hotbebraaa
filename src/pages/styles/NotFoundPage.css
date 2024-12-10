@@ -1,0 +1,18 @@
+main#not-found-page-main {
+  text-align: center;
+}
+
+main#not-found-page-main {
+  & img#img-404 {
+    width: 50rem;
+    margin: 3rem auto 1rem auto;
+  }
+
+  & h2 {
+    font-size: 4rem;
+  }
+
+  & p {
+    font-size: 1.5rem;
+  }
+}

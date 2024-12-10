@@ -1,0 +1,62 @@
+:root {
+  --cell-border-color: black;
+}
+
+#board {
+  border: 2px solid var(--cell-border-color);
+}
+
+#board {
+  div.boardRow {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    background-color: red;
+  }
+  
+  button.cell {
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--cell-border-color);
+    box-shadow: inset 0 0 0 2px white;
+    cursor: default;
+  }
+  
+  
+  button.cell.blank {
+    background-color: white;
+  }
+  
+  button.cell.filled {
+    background-color: black;
+  }
+  
+  button.cell.crossed {
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode";
+  }
+  
+  
+  /* Apply thicker border every 5 cells*/
+  button.cell:nth-of-type(5n) {
+    border-right: 2px solid var(--cell-border-color);
+  }
+  
+  button.cell:nth-of-type(5n+1) {
+    border-left: 2px solid var(--cell-border-color);
+  }
+  
+  div.boardRow:nth-of-type(5n) > button.cell {
+    border-bottom: 2px solid var(--cell-border-color);
+  }
+  
+  div.boardRow:nth-of-type(5n+1) > button.cell {
+    border-top: 2px solid var(--cell-border-color);
+  }
+}

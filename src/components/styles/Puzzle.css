@@ -1,0 +1,10 @@
+#puzzle {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content max-content;
+  background-color: white;
+  width: max-content;
+  padding: 2rem;
+  border: 2px solid black;
+  margin: 0 auto;
+}
